@@ -4,8 +4,7 @@ on:
   push:
     branches: 'main' # Trigger on pushes to the main branch. 
     # Ensure the branch name matches your repository's default branch, 
-    # as it might still be named 'master' in some cases.
-
+    
 jobs:
   build_site:
     runs-on: ubuntu-latest
