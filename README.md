@@ -1,12 +1,38 @@
-# Niketha- Visualization 5609 Assignment
-A0- Assignment 0
+# sv
 
-This Assignment demonstrates a basic Svelte web application that tracks the number of clicks on a button and updates the content accordingly. The user can also set a maximum number of allowed clicks.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-Features
+## Creating a project
 
-- **Click Counter**: The button's text updates with each click to show the remaining number of allowed clicks.
-- **Customizable Click Limit**: Users can change the maximum number of allowed clicks.
-- **Click Limit Alert**: Once the user reaches the maximum number of clicks, an alert appears: "No more clicks remaining!"
-- **Responsive UI**: The button's background color and font size are customizable.
+If you're seeing this, you've probably already done this step. Congrats!
 
+```bash
+# create a new project in the current directory
+npx sv create
+
+# create a new project in my-app
+npx sv create my-app
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
