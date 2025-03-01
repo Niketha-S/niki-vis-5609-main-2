@@ -8,11 +8,12 @@ const config = {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: 'index.html'  // 👈 This makes `/A1` and `/A2` work on GitHub Pages!
+      fallback: 'index.html'  // 👈 Fixes 404 errors on routes like /A1
     }),
     paths: {
-      base: "/niki-vis-5609-main-2" // 👈 Set base path for GitHub Pages
-    }
+      base: "/niki-vis-5609-main-2"  // 👈 Base path for GitHub Pages
+    },
+    appDir: "_app"
   }
 };
 
