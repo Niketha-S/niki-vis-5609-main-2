@@ -27,7 +27,7 @@ jobs:
 
       - name: Build
         env:
-           BASE_PATH: '/niki-vis-5609-main-2'
+           BASE_PATH: ''
         run: npm run build
 
       - name: Check Build Output

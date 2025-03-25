@@ -10,6 +10,9 @@ const config = {
       assets: 'build',
       fallback: 'index.html'  // 👈 Fixes 404 errors on routes like /A1
     }),
+    prerender: {
+      entries: ['*'] // Ensures all pages are prerendered
+    },
     paths: {
       base: "/niki-vis-5609-main-2"  // 👈 Base path for GitHub Pages
     },
